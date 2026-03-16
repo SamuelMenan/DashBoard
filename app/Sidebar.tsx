@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Sidebar({ setActiveSection, activeSection }) {
   return (
-    <aside className="w-64 min-h-screen bg-white shadow-lg p-6 flex flex-col">
+    <aside className="w-64 bg-white shadow-lg p-6 flex flex-col rounded-xl
+      md:static md:w-64 w-4/5 transition-transform duration-300 md:block block
+      h-full flex-grow overflow-y-auto"
+      style={{ maxWidth: '320px' }}>
       <div className="mb-8">
         <span className="text-xs text-gray-400 mb-2 block">Menu</span>
         <nav className="flex flex-col gap-2">

@@ -10,7 +10,7 @@ export default function Header({ sidebarOpen, setSidebarOpen }: HeaderProps) {
     <div className="w-full flex items-center justify-between mb-8 gap-4">
       <Logo />
       {/* Botón para cerrar/abrir sidebar */}
-      <div className="ml-2 flex items-center">
+      <div className="ml-2 flex items-center md:hidden">
         {sidebarOpen ? (
           <button
             className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 transition shadow"

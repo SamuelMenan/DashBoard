@@ -47,8 +47,8 @@ export default function DashboardContent() {
       {/* Parte inferior: grid de 2 columnas */}
       <div className="grid grid-cols-2 gap-6">
         {/* Columna izquierda: sesiones y gráfica */}
-        <div className="flex flex-col gap-6">
-          <div className="bg-[#f7f8fa] rounded-xl p-6 shadow-lg flex flex-col">
+        <div className="flex flex-col gap-6 h-full">
+          <div className="bg-[#f7f8fa] rounded-xl p-6 shadow-lg flex flex-col h-full">
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-2">
                 <span className="material-icons text-3xl bg-[#6C63FF] text-white rounded-full p-2 shadow">groups</span>
@@ -99,9 +99,9 @@ export default function DashboardContent() {
           </div>
         </div>
         {/* Columna derecha: panel azul y conversión */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 h-full">
           {/* Panel azul Need More Stats */}
-          <div className="bg-[#3F51B5] rounded-xl p-6 shadow-lg flex flex-col text-white relative overflow-hidden">
+          <div className="bg-[#3F51B5] rounded-xl p-6 shadow-lg flex flex-col text-white relative overflow-hidden h-full">
             <span className="font-bold text-lg mb-2">Need More Stats?</span>
             <span className="text-sm mb-4">Upgrade to pro for added benefits.</span>
             <button className="bg-green-500 hover:bg-green-600 transition px-6 py-2 rounded-lg font-semibold text-white w-fit shadow-lg">Go Pro Now</button>
@@ -113,7 +113,7 @@ export default function DashboardContent() {
             </svg>
           </div>
           {/* Panel conversión */}
-          <div className="bg-[#f7f8fa] rounded-xl p-6 shadow-lg flex flex-col items-center">
+          <div className="bg-[#f7f8fa] rounded-xl p-6 shadow-lg flex flex-col items-center h-full">
             <span className="font-semibold text-gray-900 mb-2">Conversion</span>
             {/* Gráfico semicircular colorido */}
             <svg width="180" height="90" viewBox="0 0 180 90">
